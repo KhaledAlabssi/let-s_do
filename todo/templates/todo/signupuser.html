@@ -1,6 +1,9 @@
 {% extends 'base.html' %}
 {% block content %}
-<form action="signupuser_submit" method="POST" accept-charset="utf-8">
+<br>
+{{ error }}
+<br>
+<form method="POST" accept-charset="utf-8">
 	{% csrf_token %}
 
 		{{form.as_p}}
